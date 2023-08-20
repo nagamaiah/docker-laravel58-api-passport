@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "1cfbc92e-6087-4ea5-a8c7-115541e60bb7",
+		"name": "Laravel Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6847222"
+	},
+	"item": [
+		{
+			"name": "http://local.laravel58.com:8181/api/testdata",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVlOGM0NTA4ZjJhODQ4ZGZlYjEwYTk1M2QxNDY5MTUxMTAwZGMzMjA4ZjI5MTdkOGMzNzI0YTY2MTQ5ZTZkM2IxOGU5ZjE0ODBkNWYyZjYxIn0.eyJhdWQiOiIxIiwianRpIjoiNWU4YzQ1MDhmMmE4NDhkZmViMTBhOTUzZDE0NjkxNTExMDBkYzMyMDhmMjkxN2Q4YzM3MjRhNjYxNDllNmQzYjE4ZTlmMTQ4MGQ1ZjJmNjEiLCJpYXQiOjE2OTI1MjM0NjgsIm5iZiI6MTY5MjUyMzQ2OCwiZXhwIjoxNzI0MTQ1ODY4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.U00MpoFG5htrNyIxyv9MDgp2_NK-_TbXwnMJZHckd3NXXGEvYzf4eQmUSPF1D2mavPZ-pfZ1Zfr6fz7sO_Xn132Y3ZBS-Yi2gT37a17UdDryiLZ_e-Brx6ABt9yZ9UxpWfpoT-sS8gqzp5LjluTS3LPb0c2FNzovyr_OL_A56NXAR5Z41X_2GWetZ3yZsoUBVVVvhTwd-2fJeTfVuzhOY9GHzP7OhlWHNvMuvCAc-ke7HuyEcElannDA8ENoEIv1vBwCIhpfbdLf8Yi-nhnB7dPE98Y8xKAFlRRsnSNieAzzOJtZmtSWc1UQabJdQRqsnzPJnBNMQ8Hc5iBYUnPqEyJd4NkwfM_qy5xN0na7FzNklCvc3i-Y6Wvq_68d2Txemv4Vv_rAawrJerG5gqLKA_Z67i9xIJaunNfMHrTr3Eyzy_ouD1TSEoN3Jkab-KLi77_o4z-O_BwYZna4W3KNNjPnJqIXRMvlEYfdZsljpUpc4O-atAt1rDMG6SKCYMk8X8DS0umy1cvXfST-XmWrJQyMB7k2nyUGDio4TtB0DmZDseDxuy7vZW3urPPWsNsNrceO0tD9KqSYmpiKm7mvL16zWMGf-Sqt_K3H0odjbGiwnwdcj0BAZLpQVzCOjZWrQLncbYaeMzIoJbGOrseAb1drb6-nB2h05wZnzmmaLa0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://local.laravel58.com:8181/api/testdata",
+					"protocol": "http",
+					"host": [
+						"local",
+						"laravel58",
+						"com"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"testdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://local.laravel58.com:8181/api/createToken/3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://local.laravel58.com:8181/api/createToken/2",
+					"protocol": "http",
+					"host": [
+						"local",
+						"laravel58",
+						"com"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"createToken",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://local.laravel58.com:8181/api/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Nagamaiah",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "nag123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://local.laravel58.com:8181/api/register",
+					"protocol": "http",
+					"host": [
+						"local",
+						"laravel58",
+						"com"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://local.laravel58.com:8181/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nag123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://local.laravel58.com:8181/api/login",
+					"protocol": "http",
+					"host": [
+						"local",
+						"laravel58",
+						"com"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://local.laravel58.com:8181/api/logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU4YzcxNWJjNWNiNGE5ZjE1M2YwY2I2YzFlNGQzYWU2ODQ0ZGMzYjk2N2FhMmQxMDQyNDI1ZDViMDljMTIwMjZkZDc4NTE3YTE3YTNkZmM1In0.eyJhdWQiOiIxIiwianRpIjoiNThjNzE1YmM1Y2I0YTlmMTUzZjBjYjZjMWU0ZDNhZTY4NDRkYzNiOTY3YWEyZDEwNDI0MjVkNWIwOWMxMjAyNmRkNzg1MTdhMTdhM2RmYzUiLCJpYXQiOjE2OTI1Mjk2NDMsIm5iZiI6MTY5MjUyOTY0MywiZXhwIjoxNzI0MTUyMDQzLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.Mgdke2By2RVxL1xntBpmVOK29JJrpbjMObW6xW0D-iN5JbJgJwkZkAakO5BlFUpnZvOXXkJdS2iq4QkaZQZaAVW5fyugB0Mgq5MNPElBhQP5bROKNMK9Mlr8adxxCNHdxwinLqz9_jbHfYxt3rF7syZHvP7LCIuvK2rrxo-xXQ2XFkkvNCoKxSUQlo-jaXrnvEOczbgpaG0j12PkitmZOtoD1prt1GC1mwfCCb-MbBAdq_nBvweFh3lUWKn100H2EB9xUEq2z-CGaIYV0xsOgobCbvcJmZ2Qo1ptxrVncvmXx4_664MOoivN9t3YECktX2i6cYhBPlqpIdygVxbJFqsmUtQSU8KVteD3fIWAbh1P_bdPovEDktLDp8caV7IQF3_2Mmq0yKxWO9Q0navK0-6ImFBZI-18CaVnLUFhjqALoZ18EeSLEDFQKbUnnSbcZkuOukXk2HdWW3p9Z_kCMcgCshJIYAQ_WGsIQCr03WZ3t4bnUimrBXrpZfjbQlnq9LlLbJQk8t6uLk6yFwneEqIwnqx7Ph85gexcOLQXQNNuA0hTc7wWJSvGOs1i55dCJQGPmxKwLLM3Wvze3rYwycEQjFDP5Iid_xJ8zuW1TN-QolQVSV10-kFQ4CqKtoenbY8Y2Oi67J8-swXjlt3wGfePUD4cXyX21OiRtn4_8q4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://local.laravel58.com:8181/api/logout",
+					"protocol": "http",
+					"host": [
+						"local",
+						"laravel58",
+						"com"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://local.laravel58.com:8181/api/user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU4YzcxNWJjNWNiNGE5ZjE1M2YwY2I2YzFlNGQzYWU2ODQ0ZGMzYjk2N2FhMmQxMDQyNDI1ZDViMDljMTIwMjZkZDc4NTE3YTE3YTNkZmM1In0.eyJhdWQiOiIxIiwianRpIjoiNThjNzE1YmM1Y2I0YTlmMTUzZjBjYjZjMWU0ZDNhZTY4NDRkYzNiOTY3YWEyZDEwNDI0MjVkNWIwOWMxMjAyNmRkNzg1MTdhMTdhM2RmYzUiLCJpYXQiOjE2OTI1Mjk2NDMsIm5iZiI6MTY5MjUyOTY0MywiZXhwIjoxNzI0MTUyMDQzLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.Mgdke2By2RVxL1xntBpmVOK29JJrpbjMObW6xW0D-iN5JbJgJwkZkAakO5BlFUpnZvOXXkJdS2iq4QkaZQZaAVW5fyugB0Mgq5MNPElBhQP5bROKNMK9Mlr8adxxCNHdxwinLqz9_jbHfYxt3rF7syZHvP7LCIuvK2rrxo-xXQ2XFkkvNCoKxSUQlo-jaXrnvEOczbgpaG0j12PkitmZOtoD1prt1GC1mwfCCb-MbBAdq_nBvweFh3lUWKn100H2EB9xUEq2z-CGaIYV0xsOgobCbvcJmZ2Qo1ptxrVncvmXx4_664MOoivN9t3YECktX2i6cYhBPlqpIdygVxbJFqsmUtQSU8KVteD3fIWAbh1P_bdPovEDktLDp8caV7IQF3_2Mmq0yKxWO9Q0navK0-6ImFBZI-18CaVnLUFhjqALoZ18EeSLEDFQKbUnnSbcZkuOukXk2HdWW3p9Z_kCMcgCshJIYAQ_WGsIQCr03WZ3t4bnUimrBXrpZfjbQlnq9LlLbJQk8t6uLk6yFwneEqIwnqx7Ph85gexcOLQXQNNuA0hTc7wWJSvGOs1i55dCJQGPmxKwLLM3Wvze3rYwycEQjFDP5Iid_xJ8zuW1TN-QolQVSV10-kFQ4CqKtoenbY8Y2Oi67J8-swXjlt3wGfePUD4cXyX21OiRtn4_8q4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://local.laravel58.com:8181/api/user",
+					"protocol": "http",
+					"host": [
+						"local",
+						"laravel58",
+						"com"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://local.laravel58.com:8181/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkxMmI3MmY1MWYzNDU0NDdkOWRkNzRiYzM1Y2FjZGYyMjg4ZjFkMzFkNGYyZmFlMTA3ZmI0ZGMzMzBiNzZlZTUxMmYzZWViOTEzZTdmYWNlIn0.eyJhdWQiOiIxIiwianRpIjoiOTEyYjcyZjUxZjM0NTQ0N2Q5ZGQ3NGJjMzVjYWNkZjIyODhmMWQzMWQ0ZjJmYWUxMDdmYjRkYzMzMGI3NmVlNTEyZjNlZWI5MTNlN2ZhY2UiLCJpYXQiOjE2OTI1MzMzNTEsIm5iZiI6MTY5MjUzMzM1MSwiZXhwIjoxNzI0MTU1NzUxLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.qhNIX991LfReidG9wupnxpPrVYSBxygB_gCHcwlM8B2PUXu7VkqFJotZBNglc62y0-iPYfVfcyLWN2MthoCfwIefGFrNbLc4YTq4l7hsuE4yWagigtaCgBMPsRZ5Cyfs2OXL_GfEkAf09perKoLU8O2B2A0FtGK9IFOPKjJisDdOV1oPsFlH57Cw7muM8FBUXruBY0QOtuvPccQxDzHQz2Jir8LOO9vNPOeq-b8WLxbyDKzkD-MaQN0k_bcy9FisU99FRTlGcIm_gg8PVVlcKxSVLcfFzpwpJfxT5oFCDWKAr2hBFzvK1AFlRCFmHnMnJHCpBTXDJM4GTkWcIdvnkckRHufoUdiN9qMCIOLAMuxJzGbYSpowKa3u9nE8spAAbx70Hq2HfRTB74XasvVa41cLpofO7D1KVqnuhCUxvqVLHZpYeS5dCVuBH_Wi6Smm20aUS10mdTwWJeJ5vT5N_sKamLJ4L9wSJp9yj8e0wQxzj8vda5P1eRaQsfzTdO5XMa1GxdjFYpoSbfGx0tJI0Pt8R349JwKm86AtEyDAL5eXbKz8LyUsYKFOnfGR83PGa7Rr-2zX9I9jolQ6ZAAxQgOsHGD-CxTU_DAyEz93hbUZdv8VaDAN7XO4nQaJ5jQ1Rra7cBCdzvCLWjsGDkacDPSLpiMxKGVb8AMXbW0riP4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://local.laravel58.com:8181/api/products",
+					"protocol": "http",
+					"host": [
+						"local",
+						"laravel58",
+						"com"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://local.laravel58.com:8181/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkxMmI3MmY1MWYzNDU0NDdkOWRkNzRiYzM1Y2FjZGYyMjg4ZjFkMzFkNGYyZmFlMTA3ZmI0ZGMzMzBiNzZlZTUxMmYzZWViOTEzZTdmYWNlIn0.eyJhdWQiOiIxIiwianRpIjoiOTEyYjcyZjUxZjM0NTQ0N2Q5ZGQ3NGJjMzVjYWNkZjIyODhmMWQzMWQ0ZjJmYWUxMDdmYjRkYzMzMGI3NmVlNTEyZjNlZWI5MTNlN2ZhY2UiLCJpYXQiOjE2OTI1MzMzNTEsIm5iZiI6MTY5MjUzMzM1MSwiZXhwIjoxNzI0MTU1NzUxLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.qhNIX991LfReidG9wupnxpPrVYSBxygB_gCHcwlM8B2PUXu7VkqFJotZBNglc62y0-iPYfVfcyLWN2MthoCfwIefGFrNbLc4YTq4l7hsuE4yWagigtaCgBMPsRZ5Cyfs2OXL_GfEkAf09perKoLU8O2B2A0FtGK9IFOPKjJisDdOV1oPsFlH57Cw7muM8FBUXruBY0QOtuvPccQxDzHQz2Jir8LOO9vNPOeq-b8WLxbyDKzkD-MaQN0k_bcy9FisU99FRTlGcIm_gg8PVVlcKxSVLcfFzpwpJfxT5oFCDWKAr2hBFzvK1AFlRCFmHnMnJHCpBTXDJM4GTkWcIdvnkckRHufoUdiN9qMCIOLAMuxJzGbYSpowKa3u9nE8spAAbx70Hq2HfRTB74XasvVa41cLpofO7D1KVqnuhCUxvqVLHZpYeS5dCVuBH_Wi6Smm20aUS10mdTwWJeJ5vT5N_sKamLJ4L9wSJp9yj8e0wQxzj8vda5P1eRaQsfzTdO5XMa1GxdjFYpoSbfGx0tJI0Pt8R349JwKm86AtEyDAL5eXbKz8LyUsYKFOnfGR83PGa7Rr-2zX9I9jolQ6ZAAxQgOsHGD-CxTU_DAyEz93hbUZdv8VaDAN7XO4nQaJ5jQ1Rra7cBCdzvCLWjsGDkacDPSLpiMxKGVb8AMXbW0riP4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"product4\",\n    \"description\":\"product4 desctiption\",\n    \"amount\":47.54\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://local.laravel58.com:8181/api/products",
+					"protocol": "http",
+					"host": [
+						"local",
+						"laravel58",
+						"com"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://local.laravel58.com:8181/api/products/3",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
